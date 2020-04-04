@@ -1,0 +1,6 @@
+framework module Pods_DependabotTest {
+  umbrella header "Pods-DependabotTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
