@@ -1,10 +1,13 @@
-# Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
+platform :ios, '11.0'
+use_frameworks!
 
-target 'DependabotTest' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for DependabotTest
+def core_pods
   pod 'RxSwift', '~> 5.0.0'
+  pod 'SwiftHash', '~> 2.0.2'
+  pod 'XLActionController/Youtube', '~> 5.0.0'
 end
+
+target 'MyApp' do
+  core_pods
+end
+
